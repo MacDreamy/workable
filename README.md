@@ -1,2 +1,53 @@
-Rails app generated with [lewagon/rails-templates](https://github.com/lewagon/rails-templates), created by the [Le Wagon coding bootcamp](https://www.lewagon.com) team.
+# Please read the StyleGuide.md before submitting your code
 
+# Please read the rest of this document carefully and thoroughly
+
+# Workflow Tips
+
+When a Pull Request is merged, a new commit is created on master.
+You need to fetch it on your local repository.
+
+Be very careful
+First, you need a CLEAN git status.
+
+```
+git status
+```
+
+then switch to the master branch
+get all the changes from remote repository to local **master** branch
+
+```
+git checkout master
+git pull origin master
+```
+
+Then you can clean up local unused branches
+
+```
+git sweep
+```
+
+
+Colleagues may have added gems, NPM packages or change the DB schema:
+
+```
+bundle install
+yarn install
+rails db:migrate
+```
+
+When merging master in your branches
+Do you need something in master back into your current branch?
+
+```
+git status
+# MAKE SURE THIS IS CLEAN
+
+git checkout your-feature-branch-name
+git merge master
+```
+
+**2 rules**
+Never commit directly to master. Use feature branches
+Always make sure git status is clean before pull, checkout or merge.
