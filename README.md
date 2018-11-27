@@ -8,6 +8,11 @@ rbenv install 2.5.1
 rbenv global 2.5.1
 ```
 
+after that, restart your Terminal, remember to install bundler in the new ruby environment
+```ruby
+gem install bundler
+```
+
 # Please read the StyleGuide.md before submitting your code
 
 # Please read the rest of this document carefully and thoroughly
