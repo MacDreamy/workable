@@ -36,6 +36,6 @@ class ReviewsController < ApplicationController
   private
 
   def params_review
-    params.require(:review).permit(:workspace_id, :comment, rating: wifi_rating: noise_level:)
+    params.require(:review).permit(:workspace_id, :comment, :rating, :wifi_rating, :noise_level)
   end
 end
