@@ -41,6 +41,7 @@ gem 'font-awesome-sass', '~> 5.0.9'
 gem 'sassc'
 gem 'simple_form'
 gem 'webpacker'
+gem "pundit"
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get
