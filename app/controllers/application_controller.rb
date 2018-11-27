@@ -1,4 +1,4 @@
-class ApplicationController < ActionController::API
+class ApplicationController < ActionController::Base
   # [...]
   before_action :authenticate_user!
   include Pundit
