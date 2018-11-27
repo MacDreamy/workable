@@ -1,3 +1,13 @@
+# Before start, please make sure to use ruby 2.5.1
+
+if using rbenv for ruby installation management, use the following command
+```bash
+rbenv install 2.5.1
+
+# set 2.5.1 as the default ruby after the installation is complete
+rbenv global 2.5.1
+```
+
 # Please read the StyleGuide.md before submitting your code
 
 # Please read the rest of this document carefully and thoroughly
