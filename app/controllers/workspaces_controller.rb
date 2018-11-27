@@ -2,7 +2,7 @@ class WorkspacesController < ApplicationController
   skip_before_action :authenticate_user!, only: :index
 
   def index
-    @workspaecs = Workspace.all
+    @workspaces = Workspace.all
   end
 
   def show
