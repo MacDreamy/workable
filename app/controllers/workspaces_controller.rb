@@ -13,6 +13,7 @@ class WorkspacesController < ApplicationController
 
   def create
     @workspace = Workspace.new(params_workspace)
+    authorize @workspace
     # categroy and workspace (belongs to) not identified
   end
 
@@ -22,6 +23,7 @@ class WorkspacesController < ApplicationController
 
   def update
     @workspace = Workspace.find(params[:id])
+    authorize @workspace
     @workspace.update(params_workspace)
     # categroy and workspace (belongs to) not identified
   end
@@ -34,6 +36,6 @@ class WorkspacesController < ApplicationController
   private
 
   def params_workspace
-    params.require(:workspace).permit(name:, address:, phone_number:, average_rating:, average_wifi_rating:, average_noise_level:, category_id:, closed:, air_purifier:, open_time:, close_time:, power_source:, smoking_free:, featured_picture:, workspace_owner_id:)
+    params.require(:workspace).permit(:name, :address, :phone_number, :average_rating, :average_wifi_rating, :average_noise_level, :category_id, :closed, :air_purifier, :open_time, :close_time, :power_source, :smoking_free, :featured_picture, :workspace_owner_id)
   end
 end
