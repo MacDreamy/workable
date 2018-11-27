@@ -1,0 +1,48 @@
+// This file would serve as the specification of communication between
+// the back-end rails app and the front-end wechat miniprogram / webapp
+
+# User
+user_a = {
+  "phone_number": "123456789",
+  "id": 3
+}
+
+# WorkspaceOwner
+owner_a = {
+  "user_name": "Aphrodite",
+  "email": "someone@heaven.co"
+}
+
+
+# Workspace
+workspace_b = {
+  "address": "No. 1 Orchard Road, Singapore",
+  "air_purifier_onsite": true,
+  "avg_noise_level": 1,
+  "avg_rating": 4.5,
+  "avg_wifi_rating": 4,
+  "category": "Restaurant",
+  "close_time": "10:00pm",
+  "closed": false,
+  "name": "Taste Paradise",
+  "open_time": "10:00am",
+  "phone_number": "4567890",
+  "power_source_available": true,
+  "smoke_free": true
+}
+
+# Reviews
+workspace_b_reviews = {
+  {
+    "comment": "Great restaurant, impecable flavor",
+    "avg_noise_level": 1,
+    "avg_rating": 4.5,
+    "avg_wifi_rating": 4,
+  },
+  {
+    "comment": "Unforgettable flavor, nice ambience",
+    "avg_noise_level": 1,
+    "avg_rating": 4.5,
+    "avg_wifi_rating": 4.5,
+  }
+}
