@@ -14,7 +14,7 @@ Rails.application.routes.draw do
 #  get 'reviews/update'
 #  get 'reviews/destroy'
   devise_for :users
-  root to: "home#index"
+  root to: "workspaces#index"
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   resources :workspaces do
     resources :reviews, shallow: true
