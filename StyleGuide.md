@@ -21,13 +21,14 @@ use plural form of the Model in capitalized form
 **Controller**
 
 filename:
+
   modelnames_controller.rb
 
 need to use plural form of the Model name
 
 inside this file:
 ```ruby
-class **ModelnamesController** < ApplicationController
+class ModelnamesController < ApplicationController
 end
 ```
 
